@@ -17,6 +17,7 @@ def apply_coupons(cart, coupons)
          new_cart << new_item
          new_cart << new_coupon_item  
      end
+   end 
    end
  end
  cart.each do |hash|

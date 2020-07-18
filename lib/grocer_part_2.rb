@@ -6,10 +6,10 @@ def apply_coupons(cart, coupons)
    cart.each do |cart_item|
      if coupon[:item] == cart_item[:item]
          new_item = cart_item
-         new_item[:count] = "#{cart_item[:count]} - #{coupon[:num]}"
+         new_item[:count] = cart_item[:count] - coupon[:num]
          new_coupon_item = {
            :item => "#{coupon[:item]} W/COUPON",
-           :price => "#{coupon[:price]} / #{coupon[:num]}",
+           :price => coupon[:price] / coupon[:num],
            :clearance => cart_item[:clearance],
            :count => coupon[:num]
          }

@@ -32,7 +32,7 @@ def apply_coupons(cart, coupons)
 def apply_clearance(cart)
   cart.each do |hash|
     if hash[:clearance]
-      hash[:price] = hash[:price] * .8
+      hash[:price] = hash[:price] * 0.8
     end
   end 
 end

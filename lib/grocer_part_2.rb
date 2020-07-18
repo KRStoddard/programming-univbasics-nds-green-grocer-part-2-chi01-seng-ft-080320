@@ -7,7 +7,7 @@ def apply_coupons(cart, coupons)
      if coupon[:item] == cart_item[:item]
        if cart_item[:count] > coupon[:count]
          new_item = cart_item
-         new_item[:count] = cart_item[:count] - coupon_item[:count]
+         new_item[:count] = cart_item[:count] - coupon[:count]
          new_coupon_item = {
            :item => "#{coupon[:item]} W/COUPON",
            :price => coupon[:price] / coupon[:count],

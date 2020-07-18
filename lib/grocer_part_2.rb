@@ -3,7 +3,7 @@ require_relative './part_1_solution.rb'
 def apply_coupons(cart, coupons)
  new_cart = []
  coupons.each do |coupon|
-   find_item_in_
+   cart_item = find_item_in_collection
     
 
 def apply_clearance(cart)
